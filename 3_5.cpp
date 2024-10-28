@@ -23,13 +23,13 @@ int main(int argc, char* argv[]) {
 
     if (rank == 0) {
         // Initializa la matriz
-        std::cout << "Enter the elements of the matrix (" << n << "x" << n << "):\n";
+        std::cout << "ingresa los elementos de la matriz (" << n << "x" << n << "):\n";
         for (int i = 0; i < n * n; ++i) {
             std::cin >> matrix[i];
         }
 
         // Initialize el vector
-        std::cout << "Enter the elements of the vector (" << n << "):\n";
+        std::cout << "Ingresa elementos para el vector (" << n << "):\n";
         for (int i = 0; i < n; ++i) {
             std::cin >> vector[i];
         }
@@ -59,7 +59,7 @@ int main(int argc, char* argv[]) {
 
     // Process 0 imprime el resultado
     if (rank == 0) {
-        std::cout << "Result of matrix-vector multiplication:\n";
+        std::cout << "Resultado:\n";
         print_vector(final_result);
     }
 
